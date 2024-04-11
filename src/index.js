@@ -4,6 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBrUmEr1rLyK50sPH1r9HSa_UFtW6JG1VU",
+  authDomain: "my-web-app-71ab1.firebaseapp.com",
+  projectId: "my-web-app-71ab1",
+  storageBucket: "my-web-app-71ab1.appspot.com",
+  messagingSenderId: "268949940989",
+  appId: "1:268949940989:web:f09d4d974fb84814d3ac94"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
